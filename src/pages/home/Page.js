@@ -12,6 +12,10 @@ export function HomePage() {
       <Link to="hogeun">
         <h1>호근 페이지로 이동</h1>
       </Link>
+
+      <Link to="yousuk">
+        <h1>유석 페이지로 이동</h1>
+      </Link>
     </Flex.Column>
   );
 }
