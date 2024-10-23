@@ -1,7 +1,7 @@
 import { Flex } from "../../common/components/Flex";
 import "./Page.css";
 
-export function TaejinIntroPage() {
+export function YousukIntroPage() {
   return (
     <Flex.Column>
       <h1 className="text">내 이름은 유석</h1>
