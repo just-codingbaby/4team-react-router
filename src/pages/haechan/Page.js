@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Flex } from "../../common/components/Flex";
 import "./Page.css";
+import getMovie from "./MovieApi";
 
 function Sogam() {
   const [word, setWord] = useState('');
@@ -17,7 +18,19 @@ function Sogam() {
   )
 }
 
+
+
 export function HaechanIntroPage() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(()=> {
+    const getMovies = async () => {
+      const data = await getMovie();
+      setMovies(data);
+    }
+    getMovies();
+  },[])
+
   return (
     <div className="intro__box">
       <Flex.Column className="flexColumn" > 
@@ -31,6 +44,17 @@ export function HaechanIntroPage() {
       </Flex.Row>
 
       <Sogam/>
+
+      <div>
+        <h2>박스오피스 영화 순위(2024.10.23일자):</h2>
+        <ul>
+          {movies.map(movie => (
+            <li key={movie.movieCd}>
+              {movie.rank}. {movie.movieNm} - 관객 수: {movie.audiCnt}명
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

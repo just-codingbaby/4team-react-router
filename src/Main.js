@@ -3,6 +3,7 @@ import { HomePage } from "./pages/home/Page";
 import { TaejinIntroPage } from "./pages/taejin/Page";
 import { HogeunIntroPage } from "./pages/hogeun/Page";
 import { YousukIntroPage } from "./pages/yousuk/Page";
+import { HaechanIntroPage } from "./pages/haechan/Page.js";
 import App from "./App.js";
 
 export function Main() {
