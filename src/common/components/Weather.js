@@ -22,7 +22,7 @@ function Weather({ x, y }) {
     // 시간은 당일 오전 8시로 고정
     const baseTime = "0800";
 
-    const serviceKey = process.env.REACT_APP_SERVICE_KEY;
+    const serviceKey = "oNf4se0PfiBv4cx%2Bmc94gwGFgQIfUmW0DwTff3dD5uP3XYNw1kd9vN0TekbwzR4Vw4DAkBGV2k2%2FZseQMZlAsA%3D%3D";
 
     // 최종 API URL
     const apiUrl = `http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=${serviceKey}&base_date=${baseDate}&base_time=${baseTime}&nx=${x}&ny=${y}&dataType=JSON`;
