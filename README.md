@@ -16,7 +16,9 @@ my_xy.json 이라는 파일이 있습니다.
 
 예시)
 
+```
 import Weather from "../../common/components/Weather";
+```
 
 ---
 
@@ -25,7 +27,9 @@ import Weather from "../../common/components/Weather";
 
 예시)
 
+```
 <Weather x={57} y={128} />
+```
 
 ---
 
