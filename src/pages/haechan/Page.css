@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  color: var(--pastel-coral);
+}
+
+.flexColumn {
+  gap: 8px;
+}
+
+.flexColumn p {
+  font-size: 25px;
+}
+
+.intro__box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.flexRow p {
+  font-size: 25px;
+}
+
+.sogam__button {
+  width: 100px;
+  height:80px;
+}
+
+
+
