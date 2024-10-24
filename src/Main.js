@@ -15,6 +15,7 @@ export function Main() {
           <Route path="taejin" element={<TaejinIntroPage />} />
           <Route path="hogeun" element={<HogeunIntroPage />} />
           <Route path="yousuk" element={<YousukIntroPage />} />
+          <Route path="haechan" element={<HaechanIntroPage />} />
         </Routes>
       </App>
     </BrowserRouter>
